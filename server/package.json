@@ -1,0 +1,17 @@
+{
+  "name": "hospitality-booking-app-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.8.3"
+  }
+}
