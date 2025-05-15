@@ -1,5 +1,6 @@
 import "dotenv/config"
 import express from "express"
+import cors from "cors"
 import { errorHandler } from "./middlewares/error-handler"
 import { validateData } from "./middlewares/validate-payload"
 import { createBookingSchema, createRoomSchema } from "./zod-schemas"
@@ -12,8 +13,12 @@ import {
 } from "./controllers"
 
 const app = express()
-
 app.use(express.json())
+app.use(
+  cors({
+    origin: "*",
+  })
+)
 
 app.get("/", (_, res) => {
   res.send("OK")
