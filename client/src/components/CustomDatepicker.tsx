@@ -20,6 +20,7 @@ const CustomDatepicker = ({
         }`}
         selected={formField?.value ? new Date(formField.value) : new Date()}
         onChange={(date) => handleChange(date as Date, formField.id)}
+        minDate={new Date()}
       />
       {formField?.errorMessage && (
         <p className="text-red-500">{formField.errorMessage}</p>

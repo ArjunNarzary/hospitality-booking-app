@@ -17,7 +17,7 @@ const Home = () => {
           Loading....
         </div>
       ) : (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {data &&
             data.rooms.map((room) => <RoomCard key={room.id} {...room} />)}
         </div>

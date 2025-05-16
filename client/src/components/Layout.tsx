@@ -3,7 +3,7 @@ import { Link, Outlet, useLocation } from "react-router"
 const Layout = () => {
   const location = useLocation()
   return (
-    <div>
+    <div className="p-2">
       <header className="py-2">
         <h1 className="font-black text-3xl py-4">Hospitality Booking App</h1>
       </header>
