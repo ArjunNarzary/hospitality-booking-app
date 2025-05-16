@@ -39,7 +39,6 @@ export const getAllAvailableRooms = asyncHandler(
 
 export const createBooking = asyncHandler(
   async (req: Request, res: Response, next: NextFunction) => {
-    console.log(req.body)
     // Check if room is available or not
     const isRoomAvailable = await prismaClient.room.findUnique({
       where: {
