@@ -24,6 +24,7 @@ Simple room booking application
 
 1. Clone the repository
 2. Install dependencies and start the backend development server:
+   - copy .env.example to .env and fill the required variables
 
 ```bash
  cd server
@@ -31,7 +32,7 @@ Simple room booking application
  npm run dev
 ```
 
-3. Install dependencies and start client development server:
+1. Install dependencies and start client development server:
 
 ```bash
 cd client
